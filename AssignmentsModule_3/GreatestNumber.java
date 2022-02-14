@@ -9,7 +9,7 @@ public class GreatestNumber {
         int num2 = randGen.nextInt(101);
         int num3 = randGen.nextInt(101);
 
-        System.out.println("The generated random number: " + num1 + ", " + num2 + ", " + num3);
+        System.out.println("The generated random numbers: " + num1 + ", " + num2 + ", " + num3);
 
         if (num1 > num2) { // First IF
             if (num1 > num3) { // Inside first IF
@@ -17,10 +17,12 @@ public class GreatestNumber {
             } else { // Inside first if
                 System.out.println("The greatest number:" + num3);
             }
-        } else {
+        }
+
+        else {
             if (num2 > num3) { // Inside first ELSE
                 System.out.println("The greatest number:" + num2);
-            } else {
+            } else { // Inside first ELSE
                 System.out.println("The greatest number:" + num3);
             }
         }
