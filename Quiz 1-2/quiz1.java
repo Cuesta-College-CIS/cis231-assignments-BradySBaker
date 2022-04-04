@@ -40,7 +40,7 @@ public class quiz1 {
 
 		minidx = 0;
 		minval = numbers[2];
-		for (int i = 2; i < 10; i++) { // find 2nd lowest value
+		for (int i = 2; i < 10; i++) { // find 3rd lowest value
 			if (numbers[i] < minval) {
 				minval = numbers[i];
 				minidx = i;
@@ -48,6 +48,19 @@ public class quiz1 {
 		}
 		tmp = numbers[2]; // Switch lowest value with index [2] and print
 		numbers[2] = numbers[minidx];
+		numbers[minidx] = tmp;
+		System.out.println(Arrays.toString(numbers));
+
+		minidx = 0;
+		minval = numbers[3];
+		for (int i = 3; i < 10; i++) { // find 4th lowest value
+			if (numbers[i] < minval) {
+				minval = numbers[i];
+				minidx = i;
+			}
+		}
+		tmp = numbers[3]; // Switch lowest value with index [3] and print
+		numbers[3] = numbers[minidx];
 		numbers[minidx] = tmp;
 		System.out.println(Arrays.toString(numbers));
 
