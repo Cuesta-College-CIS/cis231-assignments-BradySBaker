@@ -16,7 +16,14 @@ public class quiz2 {
         int rowidx = scnr.nextInt();
 
         // Your code
-
+        int sum1 = 0;
+        int sum2 = 0;
+        if (rowidx == 0) { // If user chooses first row
+            for (int i = 0; i < 3; i++) {
+                sum1 = sum1 + (matrix1[0][i] * matrix2[i][0]);
+            }
+        }
+        System.out.println(sum1);
     }
 
 }
