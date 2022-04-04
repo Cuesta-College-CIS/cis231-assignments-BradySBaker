@@ -4,9 +4,6 @@ import java.util.Scanner;
 public class quiz2 {
     public static void main(String[] args) {
         Scanner scnr = new Scanner(System.in);
-        final int L = 3; // will NOT use L. Just for the extendability.
-        final int M = 3;
-        final int N = 2;
         int[][] matrix1 = { { 2, 5, 10 },
                 { 3, 6, 9 },
                 { 1, 2, 3 } };
