@@ -23,7 +23,7 @@ public class quiz2 {
                 sum1 = sum1 + (matrix1[0][i] * matrix2[i][0]);
                 sum2 = sum2 + (matrix1[0][i] * matrix2[i][1]);
             }
-            System.out.println(sum1 + " " + sum2);
+            System.out.println(sum1 + ", " + sum2);
         }
         sum1 = 0;
         sum2 = 0;
@@ -32,14 +32,14 @@ public class quiz2 {
                 sum1 = sum1 + (matrix1[1][i] * matrix2[i][0]);
                 sum2 = sum2 + (matrix1[1][i] * matrix2[i][1]);
             }
-            System.out.println(sum1 + " " + sum2);
+            System.out.println(sum1 + ", " + sum2);
         }
         if (rowidx == 2) { // If user chooses second row
             for (int i = 0; i < 3; i++) {
                 sum1 = sum1 + (matrix1[2][i] * matrix2[i][0]);
                 sum2 = sum2 + (matrix1[2][i] * matrix2[i][1]);
             }
-            System.out.println(sum1 + " " + sum2);
+            System.out.println(sum1 + ", " + sum2);
         }
         scnr.close();
     }
