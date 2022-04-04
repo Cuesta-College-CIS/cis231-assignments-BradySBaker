@@ -38,6 +38,19 @@ public class quiz1 {
 		numbers[minidx] = tmp;
 		System.out.println(Arrays.toString(numbers));
 
+		minidx = 0;
+		minval = numbers[2];
+		for (int i = 2; i < 10; i++) { // find 2nd lowest value
+			if (numbers[i] < minval) {
+				minval = numbers[i];
+				minidx = i;
+			}
+		}
+		tmp = numbers[2]; // Switch lowest value with index [2] and print
+		numbers[2] = numbers[minidx];
+		numbers[minidx] = tmp;
+		System.out.println(Arrays.toString(numbers));
+
 		scnr.close();
 	}
 
