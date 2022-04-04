@@ -20,8 +20,21 @@ public class quiz1 {
 				minidx = i;
 			}
 		}
-		tmp = numbers[0]; // Switch lowest value with index [0]
+		tmp = numbers[0]; // Switch lowest value with index [0] and print
 		numbers[0] = numbers[minidx];
+		numbers[minidx] = tmp;
+		System.out.println(Arrays.toString(numbers));
+
+		minidx = 0;
+		minval = numbers[1];
+		for (int i = 1; i < 10; i++) { // find 2nd lowest value
+			if (numbers[i] < minval) {
+				minval = numbers[i];
+				minidx = i;
+			}
+		}
+		tmp = numbers[1]; // Switch lowest value with index [1] and print
+		numbers[1] = numbers[minidx];
 		numbers[minidx] = tmp;
 		System.out.println(Arrays.toString(numbers));
 
