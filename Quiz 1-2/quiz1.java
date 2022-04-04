@@ -14,8 +14,8 @@ public class quiz1 {
 		}
 		minidx = 0;
 		minval = numbers[0];
-		for (int i = 0; i <= 10; i++) { // Find lowest value
-			if (numbers[i] > minval) {
+		for (int i = 0; i < 10; i++) { // Find lowest value
+			if (numbers[i] < minval) {
 				minval = numbers[i];
 				minidx = i;
 			}
@@ -23,7 +23,7 @@ public class quiz1 {
 		tmp = numbers[0]; // Switch lowest value with index [0]
 		numbers[0] = numbers[minidx];
 		numbers[minidx] = tmp;
-		System.out.println(numbers);
+		System.out.println(Arrays.toString(numbers));
 
 		scnr.close();
 	}
