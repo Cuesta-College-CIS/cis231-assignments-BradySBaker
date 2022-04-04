@@ -25,7 +25,7 @@ public class quiz1 {
 		numbers[minidx] = tmp;
 		System.out.println(Arrays.toString(numbers));
 
-		minidx = 0;
+		minidx = 1;
 		minval = numbers[1];
 		for (int i = 1; i < 10; i++) { // find 2nd lowest value
 			if (numbers[i] < minval) {
@@ -38,7 +38,7 @@ public class quiz1 {
 		numbers[minidx] = tmp;
 		System.out.println(Arrays.toString(numbers));
 
-		minidx = 0;
+		minidx = 2;
 		minval = numbers[2];
 		for (int i = 2; i < 10; i++) { // find 3rd lowest value
 			if (numbers[i] < minval) {
@@ -51,7 +51,7 @@ public class quiz1 {
 		numbers[minidx] = tmp;
 		System.out.println(Arrays.toString(numbers));
 
-		minidx = 0;
+		minidx = 3;
 		minval = numbers[3];
 		for (int i = 3; i < 10; i++) { // find 4th lowest value
 			if (numbers[i] < minval) {
@@ -61,6 +61,19 @@ public class quiz1 {
 		}
 		tmp = numbers[3]; // Switch lowest value with index [3] and print
 		numbers[3] = numbers[minidx];
+		numbers[minidx] = tmp;
+		System.out.println(Arrays.toString(numbers));
+
+		minidx = 4;
+		minval = numbers[4];
+		for (int i = 4; i < 10; i++) { // find 5th lowest value
+			if (numbers[i] < minval) {
+				minval = numbers[i];
+				minidx = i;
+			}
+		}
+		tmp = numbers[4]; // Switch lowest value with index [4] and print
+		numbers[4] = numbers[minidx];
 		numbers[minidx] = tmp;
 		System.out.println(Arrays.toString(numbers));
 
