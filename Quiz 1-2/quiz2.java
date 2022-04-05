@@ -12,7 +12,7 @@ public class quiz2 {
                 { 50, 60 } };
         int rowidx = scnr.nextInt();
 
-        // Recommned use the for-loop to reduce the code
+        // Recommend use the for-loop to reduce the code
         final int M = 3;
         final int N = 2;
         int[] result = new int[N];
