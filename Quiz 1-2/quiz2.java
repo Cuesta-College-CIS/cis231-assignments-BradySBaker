@@ -12,6 +12,19 @@ public class quiz2 {
                 { 50, 60 } };
         int rowidx = scnr.nextInt();
 
+        // Recommend use the for-loop to reduce the code
+        final int M = 3;
+        final int N = 2;
+        int[] result = new int[N];
+        for (int i = 0; i < N; i++)
+            result[i] = 0;
+
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < M; j++) {
+                result[i] += matrix1[rowidx][j] * matrix2[j][i];
+            }
+        }
+
         // Your code
         int sum1 = 0;
         int sum2 = 0;
@@ -19,8 +32,8 @@ public class quiz2 {
             for (int i = 0; i < 3; i++) {
                 sum1 = sum1 + (matrix1[0][i] * matrix2[i][0]);
                 sum2 = sum2 + (matrix1[0][i] * matrix2[i][1]);
+                System.out.println(sum1 + ", " + sum2);
             }
-            System.out.println(sum1 + ", " + sum2);
         }
         sum1 = 0;
         sum2 = 0;
