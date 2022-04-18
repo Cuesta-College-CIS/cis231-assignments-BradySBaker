@@ -38,6 +38,28 @@ public class quiz2 {
         return highestValue;
     }
 
+    public static int findGreatest(int[] n1, int[] n2) {
+        string greatestValue;
+        int n1Value = 0;
+        int n2Value = 0;
+        for (int i = 0; i < n1.length; i++) {
+            if (n1[i] > n1Value) {
+                n1Value = n1[i];
+            }
+            if (n2[i] > n2Value) {
+                n2Value = n2[i];
+            }
+        }
+        if (n1Value > n2Value) {
+            greatestValue = "Array 1 has the greatest value " + n1Value;
+        } else if (n1Value = n2Value) {
+            greatestValue = "Both Arrays have equal greatest values " + n1Value;
+        } else {
+            greatestValue = "Array 2 has the greatest value " + n2Value;
+        }
+        return greatestValue;
+    }
+
     public static void main(String[] args) {
         Scanner scnr = new Scanner(System.in);
         int[] array1;
