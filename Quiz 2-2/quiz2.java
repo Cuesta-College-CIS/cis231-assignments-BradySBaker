@@ -38,8 +38,8 @@ public class quiz2 {
         return highestValue;
     }
 
-    public static int findGreatest(int[] n1, int[] n2) {
-        string greatestValue;
+    public static int[] findGreatest(int[] n1, int[] n2) {
+        int[] greatestValue = new int[2];
         int n1Value = 0;
         int n2Value = 0;
         for (int i = 0; i < n1.length; i++) {
@@ -51,11 +51,14 @@ public class quiz2 {
             }
         }
         if (n1Value > n2Value) {
-            greatestValue = "Array 1 has the greatest value " + n1Value;
-        } else if (n1Value = n2Value) {
-            greatestValue = "Both Arrays have equal greatest values " + n1Value;
+            greatestValue[0] = n1Value;
+            greatestValue[1] = 1;
+        } else if (n1Value == n2Value) {
+            greatestValue[0] = n1Value;
+            greatestValue[1] = 3;
         } else {
-            greatestValue = "Array 2 has the greatest value " + n2Value;
+            greatestValue[0] = n2Value;
+            greatestValue[1] = 2;
         }
         return greatestValue;
     }
@@ -65,11 +68,28 @@ public class quiz2 {
         int[] array1;
         int[] array2;
         int arrayLength = scnr.nextInt();
+
         array1 = constructArray(arrayLength);
         array2 = constructArray(arrayLength);
+
         printArray(array1);
         printArray(array2);
+
         int highestValue = findMoreEvens(array1, array2);
+
         System.out.println("Array " + highestValue + " has more even numbers");
+
+        int[] greatestValue = findGreatest(array1, array2);
+
+        String greatestArray = new String();
+        if (greatestValue[1] == 3) {
+            greatestArray = "Both Arrays have";
+        } else if (greatestValue[1] == 1) {
+            greatestArray = "Array 1 has";
+        } else {
+            greatestArray = "Array 2 has";
+        }
+
+        System.out.println(greatestArray + " the greatest value " + greatestValue[1]);
     }
 }
