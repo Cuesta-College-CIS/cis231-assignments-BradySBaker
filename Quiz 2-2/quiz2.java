@@ -32,6 +32,8 @@ public class quiz2 {
         }
         if (n1Value > n2Value) {
             highestValue = 1;
+        } else if (n1Value == n2Value) {
+            highestValue = 3;
         } else {
             highestValue = 2;
         }
@@ -77,7 +79,17 @@ public class quiz2 {
 
         int highestValue = findMoreEvens(array1, array2);
 
-        System.out.println("Array " + highestValue + " has more even numbers");
+        String highestArray = new String();
+
+        if (highestValue == 1) {
+            highestArray = "Array 1 has more even numbers";
+        } else if (highestValue == 2) {
+            highestArray = "Array 2 has more even numbers";
+        } else {
+            highestArray = "Both Arrays have the same amount of even numbers";
+        }
+
+        System.out.println(highestArray);
 
         int[] greatestValue = findGreatest(array1, array2);
 
@@ -90,6 +102,6 @@ public class quiz2 {
             greatestArray = "Array 2 has";
         }
 
-        System.out.println(greatestArray + " the greatest value " + greatestValue[1]);
+        System.out.println(greatestArray + " the greatest value " + greatestValue[0]);
     }
 }
