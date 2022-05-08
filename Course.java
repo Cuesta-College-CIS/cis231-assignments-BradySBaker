@@ -4,7 +4,7 @@ public class Course {
     Integer credit;
     String grade;
 
-    public Course(String id, String name, Integer c, String g) {
+    Course(String id, String name, Integer c, String g) {
         cid = id;
         cname = name;
         credit = c;
@@ -13,8 +13,13 @@ public class Course {
 
     public String toString() {
         String course = new String();
-        course = cid + " " + cname + " " + credit + " " + grade;
+        course = "    " + cid + " " + cname + " " + credit + " " + grade + "\r\n";
+
         return course;
+    }
+
+    public Integer getCredit() {
+        return credit;
     }
 
 }
