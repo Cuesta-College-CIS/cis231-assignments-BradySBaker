@@ -4,13 +4,17 @@ public class Course {
     Integer credit;
     String grade;
 
-    Course(String id, String name, Integer c, String g) {
-        // Your code
+    public Course(String id, String name, Integer c, String g) {
+        cid = id;
+        cname = name;
+        credit = c;
+        grade = g;
     }
 
     public String toString() {
-        // Your code
-        // Overide the toString() to print the course object
+        String course = new String();
+        course = cid + " " + cname + " " + credit + " " + grade;
+        return course;
     }
 
 }

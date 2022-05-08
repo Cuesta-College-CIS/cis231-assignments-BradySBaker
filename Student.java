@@ -5,19 +5,21 @@ public class Student {
     String sname;
     ArrayList<Course> clist;
 
-    Student(Integer id, String name, ArrayList<Course> c) {
+    public Student(Integer id, String name, ArrayList<Course> c) {
         sid = id;
         sname = name;
         clist = c;
     }
 
     public String toString() {
-        // Your code to print Student Object
+        String list = new String();
+        list = clist.toString();
+        return list;
     }
 
     public Integer getTotalCredits() {
-        // Your code
-        // to get the total credits for a student object
+        Integer tC = 0;
+        return tC;
     }
 
 }
