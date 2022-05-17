@@ -1,0 +1,12 @@
+1001	John	9 	03/01/2002 
+CIS01	C++	90	
+CIS02 	Python  80 
+CIS231 	Java 	90	
+1002	Kurt 	12 	05/01/2002 
+CIS01	C++ 	100	
+CIS02 	Python  100 
+CIS232 	Java2 	90	
+CNT02 	Cisco 	80 
+1003	Kim 	6 	01/01/1990	
+CIS01	C++	100	
+CIS232 	Java2 	80
