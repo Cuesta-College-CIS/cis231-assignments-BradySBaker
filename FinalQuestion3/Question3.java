@@ -12,6 +12,7 @@ public class Question3 {
         Scanner scnr = new Scanner(new File(
                 "C:\\Users\\kingb\\github-classroom\\Cuesta-College-CIS\\cis231-assignments-BradySBaker\\FinalQuestion3\\Input.txt"));
         return slist;
+
     }
 
     public static void printStudent(ArrayList<Student> slist) {
