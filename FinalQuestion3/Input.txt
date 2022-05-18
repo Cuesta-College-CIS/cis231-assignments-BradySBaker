@@ -14,3 +14,8 @@ CNT02 	Cisco 	80
 2
 CIS01	C++	100	
 CIS232 	Java2 	80
+1003	Jake 	6 	01/01/1990	
+3
+CIS01 C++ 70
+CIS02 Python 80
+CNT02 Cisco 100
