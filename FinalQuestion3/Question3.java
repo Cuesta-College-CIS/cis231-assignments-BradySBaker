@@ -10,7 +10,7 @@ public class Question3 {
     public static ArrayList<Student> fillupStudent() throws FileNotFoundException {
         int tempSid = -1;
         int tempCredits = -1;
-        int studentCount = scnr.nextInt();
+        int studentCount = scnr.nextInt(); // Note requires students number to be listed in input before anything else
         String tempDOB = new String();
         String tempName = new String();
 
