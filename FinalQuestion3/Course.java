@@ -6,8 +6,6 @@ public class Course implements CourseActivity {
     private String coursename;
     private Integer score;
     private String grade;
-    String n = new String();
-    String d = new String();
 
     // Member Methods
     public Course(String c, String cN, Integer s) {
