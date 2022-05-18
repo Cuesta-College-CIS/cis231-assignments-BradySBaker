@@ -7,27 +7,25 @@ public class Student extends Person {
     // Member Variables
     private Integer sid;
     private Integer credits;
-    private String name;
-    private String DOB;
     ArrayList<Course> cList = new ArrayList<Course>();
     // Constructor, and Member methods if needed
 
-    // fix public Student( , Integer s, Integer c){
-    // fix sid = s;
-    // fix credits = c;
-    // }
+    public Student(String name, String DOB, Integer s, Integer c) {
+        super(name, DOB);
+        sid = s;
+        credits = c;
+    }
 
     @Override
     public String toString() {
         String Person = new String();
-        // Fix
+        Person = super.toString() + "\r\n" + "ID:   " + sid + "   Credits:   " + credits;
         return Person;
     }
 
     // Implement the inherited abstract method
     @Override
     public void printPerson() {
-        // fix
-        // print the brief information for the student
+        System.out.println(super.toString() + "\r\n" + "ID:   " + sid + "   Credits:   " + credits);
     }
 }

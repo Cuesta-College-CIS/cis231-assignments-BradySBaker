@@ -14,7 +14,7 @@ public abstract class Person {
     @Override
     public String toString() {
         String Person = new String();
-        // Fix
+        Person = "Name:   " + name + "   DOB:   " + DOB;
         return Person;
     }
 

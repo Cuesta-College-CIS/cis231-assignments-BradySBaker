@@ -16,24 +16,29 @@ public class Course implements CourseActivity {
         score = s;
     }
 
-    @Override
-    public String toString() {
-        String Courses = new String();
-        // Fix toString
-        return Courses;
-    }
-
     // Implement the inherited methods from the interface
     @Override
     public void decideGrade() {
-        // Fix
+        if (score >= 90) {
+            grade = "A";
+        } else if (score >= 80) {
+            grade = "B";
+        } else {
+            grade = "C";
+        }
+    }
 
+    @Override
+    public String toString() {
+        String Courses = new String();
+        Courses = "Course ID:   " + cid + "   Name:   " + coursename + "   Score:   " + score + "   Grade:   " + grade;
+        return Courses;
     }
 
     @Override
     public void printCourseinfo() {
-        // Fix
-
+        System.out.println(
+                "Course ID:   " + cid + "   Name:   " + coursename + "   Score:   " + score + "   Grade:   " + grade);
     }
 
 }
