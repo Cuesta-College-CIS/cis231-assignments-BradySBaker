@@ -5,7 +5,7 @@ public class Course implements CourseActivity {
     private String cid;
     private String coursename;
     private Integer score;
-    private String grade;
+    private String grade = new String();
 
     // Member Methods
     public Course(String c, String cN, Integer s) {
